@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+body{
+	background-color: #FFFFFF;
+}
+
+header{
+	width: 100%;
+	height: auto;;
+	margin: 0px;
+	background-image: url("../images/img_01.1.png");
+	background-size: 100%, 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+nav{
+	font-family: "Open Sans";
+	font-size: 16pt;
+	color: black;
+}
+
+.menu{
+	font-family: "Open Sans";
+	font-size: 18pt;
+	font-stretch: extra-condensed;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+	padding-top: 70px;
+	margin-left: 550px;
+}
+
+.menu div{
+	padding-right: 100px;
+}
+
+.menu a{
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+}
+
+.menu a:hover{
+	transform: scale(1.1);
+	border-bottom: groove 1px;
+	border-color: #FFFFFF;
+}
+
+.main{
+	margin: auto;
+	color: #FFFFFF;
+	margin-top: 15%;
+	margin-bottom: 10%;
+}
+
+.main h1{
+	font-family: "Roboto Condensed";
+	font-size: 71px;
+	border-bottom: solid 2px;
+	text-transform: uppercase;
+	text-align: center
+}
+
+.main div{
+	font-family: "Open Sans Light";
+	font-size: 18pt;
+	font-style: italic;
+	text-align: center;
+}
+
+.main p{
+	float: right;
+}
+
+.home{
+	position: fixed;
+}
+
+.about_me{
+	margin-top: 70px;
+	width: 100%;
+	height: auto;
+}
+
+.about_me h1{
+	font-family: "Roboto Condensed";
+	font-weight: bold;
+	font-size: 60pt;
+	text-align: center;
+	text-transform: uppercase;
+	background: url("../images/About me.jpeg");
+	-webkit-background-clip: text;
+	color: transparent;
+	margin-bottom: 70px;
+}
+
+.films{
+	margin-top: 70px;
+	width: 100%;
+	height: auto;
+}
+
+.films h1{	
+	font-family: "Roboto Condensed";
+	font-weight: bold;
+	font-size: 60pt;
+	text-align: center;
+	text-transform: uppercase;
+	background: url("../images/Cinema.jpg");
+	background-size: 30%;
+	-webkit-background-clip: text;
+	color: transparent;
+	margin-bottom: 70px;
+}
+
+.films a{
+	color: #000000;
+	text-decoration: none;
+}
+
+.films a:hover{
+	border-bottom: solid 2px;
+	border-color: #000000;
+}
+
+.films img{
+	margin-top: auto;
+}
+
+.mark{
+	margin-top: 70px;
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+}
+
+.mark h1{	
+	font-family: "Roboto Condensed";
+	font-weight: bold;
+	font-size: 60pt;
+	text-align: center;
+	text-transform: uppercase;
+	background: url("../images/Mark.jpg");
+	background-size: 100%;
+	-webkit-background-clip: text;
+	color: transparent;
+	margin-bottom: 70px;
+}
+
+.mark table{
+	text-align: center;
+	width: 100%;
+	border: solid 1px;
+}
+
+.mark td{
+	border: solid 1px;
+}
+
+.town{
+	margin-top: 70px;
+	width: 100%;
+	height: auto;
+}
+
+.town h1{	
+	font-family: "Roboto Condensed";
+	font-weight: bold;
+	font-size: 60pt;
+	text-align: center;
+	text-transform: uppercase;
+	background: url("../images/mrpl.jpg");
+	background-size: 100%;
+	-webkit-background-clip: text;
+	color: transparent;
+	margin-bottom: 70px;
+}
+
+.town ul{
+	list-style-type: disc;
+}
+
+.town img{
+	background: linear-gradient(to top, url("../images/mrpl_img.jpg"), #FFFFFF);
+	width: 100%;
+}
+
+.cont{
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+}
+.cont a{
+	color: #000000;
+	display: block;
+}
+
+.cont a:hover{
+	transform: scale(1.1);
+}
+
+.mail{
+	display: flex;
+	flex-direction: row;
+	float: left;
+	margin-left: 10px;
+	margin-right: 58%;
+}
+
+.phone{
+	display: flex;
+	flex-direction: row;
+	float: right;
+	margin-left: 10px;
+}
+
+.pictures{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 15%;
+	color: #fff;
+	text-align: center;
+	opacity: 0.5;
+	transition: opacity 0.15s ease;
+}
+
+@media screen and (max-width: 1050px){
+	.mark{
+		margin-top: 70px;
+		width: 100%;
+		height: auto;
+		background-color: #1B3E61;
+		/*display: none;*/
+	}
+	.mark table{
+		text-align: center;
+		width: 100%;
+		border: solid 1px;
+	}
+
+	.mark td{
+		border: solid 1px;
+	}
+	
+	.mark td:before{
+		position: absolute;		
+	}
+}
